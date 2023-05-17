@@ -9,5 +9,10 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+    public DbSet<Categoria>? categoria { get; set; }
+    public DbSet<Producto>? producto { get; set; }
+    public DbSet<Estado>? estado { get; set; }
+    public DbSet<Pedido>? pedido { get; set; }
+    public DbSet<DescripcionPedido>? descripcionPedido { get; set; }
 
 }
