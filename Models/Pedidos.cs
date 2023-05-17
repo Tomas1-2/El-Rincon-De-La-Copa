@@ -8,7 +8,7 @@ public class Pedido
     public int ID { get; set; }
     public int Usuario { get; set; }
     public string? Direccion { get; set; }
-    public List<Estado>? Estados { get; set; }
-    public List<DescripcionPedido>? DescripcionesPedido { get; set; }
+    public virtual Estado? Estado { get; set; }
+    public virtual DescripcionPedido? DescripcionPedido { get; set; }
     public decimal Total { get; set; }
 }
