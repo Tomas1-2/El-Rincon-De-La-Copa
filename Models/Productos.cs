@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace El_Rincon_De_La_Copa.Models;
 public class Producto 
@@ -9,5 +10,11 @@ public class Producto
     public string? Nombre { get; set; }
     public decimal Precio { get; set; }
     public int Cantidad { get; set; }
+    public byte[]? Imagen { get; set; }
+    public string? NombreImagen { get; set; }
+    public string? TipoImagen { get; set; }
+    
+    [NotMapped]
+    public string? ImagenString { get; set; }
     public virtual Categoria? Categoria { get; set; }
 }
