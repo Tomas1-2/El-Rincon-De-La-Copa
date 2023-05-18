@@ -11,4 +11,6 @@ public class Pedido
     public virtual Estado? Estado { get; set; }
     public virtual DescripcionPedido? DescripcionPedido { get; set; }
     public decimal Total { get; set; }
+
+     
 }
