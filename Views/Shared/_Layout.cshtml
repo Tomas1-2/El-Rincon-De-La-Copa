@@ -6,11 +6,49 @@
     <title>@ViewData["Title"] - El_Rincon_De_La_Copa</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/El_Rincon_De_La_Copa.styles.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="_layout.cshtml.css" asp-append-version="true" /> *@
 </head>
 <body>
-    <header>
-        <nav > 
+    <div class="row">
+        @* Navbar Left *@
+        <header class="col col-lg-2">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="logo">
+                            <img class="img" src="~/img/logo.jpg" />
+
+                            <span class="nav-item">El Rincon De La Copa</span>
+                        </a>
+                    </li>
+                    <li><a href="">
+                        <span class="nav-iten">Home</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="nav-iten">categoria</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="nav-iten">Producto</span>
+                    </a></li>
+                    <li><a href="">
+                        <span class="nav-iten">Pedido</span>
+                    </a></li>
+                    <li><a href="" class="users Login">
+                        <span class="nav-iten">loguin</span>
+                    </a></li>
+                    <li><a href="" class="users Register">
+                        <span class="nav-iten">register</span>
+                    </a></li>                
+                </ul>
+            </nav>
+        </header>
+        <div class="container col">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+        @* <nav > 
             <div>
                 <a  asp-area="" asp-controller="Home" asp-action="Index">El_Rincon_De_La_Copa</a>
                 <button  type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -53,7 +91,11 @@
         <div class="container">
             &copy; 2023 - El_Rincon_De_La_Copa - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
+
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
