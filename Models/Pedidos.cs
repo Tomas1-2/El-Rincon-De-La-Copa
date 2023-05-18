@@ -9,6 +9,6 @@ public class Pedido
     public int Usuario { get; set; }
     public string? Direccion { get; set; }
     public virtual Estado? Estado { get; set; }
-    public virtual DescripcionPedido? DescripcionPedido { get; set; }
+    public virtual DetallePedido? DetallePedidos { get; set; }
     public decimal Total { get; set; }
 }
